@@ -1,65 +1,71 @@
 # Sistem Pemesanan Makanan
 
-Sistem Pemesanan Makanan adalah aplikasi sederhana yang memungkinkan pengguna untuk memilih makanan dari berbagai kategori menu, menentukan jumlah pesanan, dan melihat ringkasan pesanan berserta total biaya. Aplikasi ini ditulis dalam bahasa pemrograman Java.
+Aplikasi ini adalah sistem pemesanan makanan yang dikembangkan menggunakan bahasa pemrograman Java. Aplikasi ini menyediakan antarmuka yang memungkinkan pengguna untuk melihat menu makanan dari beberapa kategori, memilih makanan, menentukan jumlah pesanan, dan melihat rincian pesanan beserta total biaya.
 
 ## Daftar Isi
-1. [Tentang Proyek](#tentang-proyek)
-2. [Fitur](#fitur)
-3. [Kategori Menu](#kategori-menu)
-4. [Cara Menggunakan](#cara-menggunakan)
-5. [Contoh Penggunaan](#contoh-penggunaan)
-6. [Kontribusi](#kontribusi)
-7. [Lisensi](#lisensi)
 
-## Tentang Proyek
-Proyek ini dibuat sebagai contoh implementasi sistem pemesanan makanan untuk membantu pemahaman konsep dasar pemrograman berorientasi objek dan interaksi dengan pengguna melalui _console_.
+1. [Fitur](#fitur)
+2. [Struktur Kode](#struktur-kode)
+3. [Cara Penggunaan](#cara-penggunaan)
+4. [Kontribusi](#kontribusi)
+5. [Lisensi](#lisensi)
 
 ## Fitur
-- Memilih makanan dari beberapa kategori menu.
-- Menentukan jumlah pesanan untuk setiap makanan.
-- Melihat ringkasan pesanan dan total biaya.
-- Kode yang mudah dipahami untuk pembelajaran pemrograman Java.
 
-## Kategori Menu
-1. **Main Course**
-   - Chicken Rice - $10.99
-   - Spaghetti Bolognese - $12.99
+### 1. Tampilan Menu Makanan
+   - Menampilkan menu makanan dari beberapa kategori, seperti Makanan Utama, Makanan Pembuka, dan Desserts.
 
-2. **Appetizers**
-   - Garlic Bread - $4.99
-   - Bruschetta - $6.99
+### 2. Pemilihan Makanan
+   - Memungkinkan pengguna memilih makanan dari setiap kategori.
+   - Menampilkan daftar makanan dengan nama dan harga.
 
-## Cara Menggunakan
-1. Pastikan Anda memiliki lingkungan pengembangan Java yang terinstal.
-2. Jalankan aplikasi dengan menjalankan kelas `Main` pada _console_.
-3. Ikuti petunjuk pada _console_ untuk memilih makanan, menentukan jumlah pesanan, dan melihat ringkasan pesanan.
+### 3. Pemesanan
+   - Memungkinkan pengguna menentukan jumlah pesanan untuk setiap makanan.
+   - Menyimpan pesanan dalam keranjang.
 
-## Contoh Penggunaan
-Berikut adalah contoh penggunaan aplikasi:
+### 4. Rincian Pesanan
+   - Menampilkan rincian pesanan yang mencakup nama makanan, jumlah pesanan, dan total biaya.
+   - Menghitung total biaya pesanan.
 
-```plaintext
-Menu:
-Main Course:
-1. Chicken Rice - $10.99
-2. Spaghetti Bolognese - $12.99
+### 5. Kategori Menu
+   - Makanan Utama
+   - Makanan Pembuka
+   - Desserts
 
-Appetizers:
-3. Garlic Bread - $4.99
-4. Bruschetta - $6.99
+## Struktur Kode
 
-Pilih makanan dari Main Course (masukkan nomor makanan):
-1
-Masukkan jumlah pesanan:
-2
-Makanan ditambahkan ke pesanan.
+- `Main.java`: Kelas utama untuk menjalankan aplikasi.
+- `Menu.java`: Kelas abstrak untuk merepresentasikan item-menu.
+- `Category.java`: Kelas untuk merepresentasikan kategori menu.
+- `Order.java`: Kelas untuk merepresentasikan pesanan.
+- `MenuItem.java`: Kelas konkret untuk merepresentasikan item-menu dengan harga.
 
-Pilih makanan dari Appetizers (masukkan nomor makanan):
-3
-Masukkan jumlah pesanan:
-1
-Makanan ditambahkan ke pesanan.
+## Cara Penggunaan
 
-Ordered Items:
-Chicken Rice x2 - $21.98
-Garlic Bread x1 - $4.99
-Total: $26.97
+1. **Menjalankan Aplikasi:**
+   - Pastikan Java sudah terinstal di komputer Anda.
+   - Buka proyek di IntelliJ IDEA atau IDE Java lainnya.
+   - Jalankan kelas `Main.java`.
+
+2. **Melihat Menu dan Memilih Makanan:**
+   - Pilih kategori menu (Makanan Utama, Makanan Pembuka, atau Desserts).
+   - Pilih makanan dari daftar yang ditampilkan.
+
+3. **Menambahkan Pesanan:**
+   - Tentukan jumlah pesanan untuk setiap makanan yang dipilih.
+
+4. **Melihat Rincian Pesanan:**
+   - Aplikasi akan menampilkan rincian pesanan beserta total biaya.
+
+5. **Menyelesaikan Pesanan:**
+   - Pesanan dapat disimpan atau diubah sebelum menyelesaikannya.
+
+## Kontribusi
+
+Kontribusi sangat dihargai! Jika Anda menemukan bug atau memiliki saran perbaikan, silakan buka _issue_ atau kirimkan _pull request_.
+
+## Lisensi
+
+Projek ini tidak dilisensikan secara khusus. Anda bebas menggunakan, mengubah, dan mendistribusikannya sesuai kebutuhan Anda.
+
+
